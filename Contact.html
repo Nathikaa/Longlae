@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<!-- Bootstrap CSS ติดต่อ -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+</style>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+	font-family: "Prompt", sans-serif;
+}
+body {
+    font-family: 'outfit';
+    background: linear-gradient(#ffff, #91bfe7);
+}
+.Contact-container {
+    height: 100vh;
+    display:  flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.Contact-left-title h2 {
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.Contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #4b10ec;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+	label {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #212529;
+  text-transform: capitalize;
+}
+
+.star {
+  color: #fd0000;
+  font-size: 18px;
+}
+
+	
+.Contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500px;
+  color: #666;
+  border-radius: 20px;
+}
+.Contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.Contact-inputs:focus{
+  border: 2px solid #ff994f;
+}
+.Contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+.Contact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg,#6aadec,#1a25a5);
+  cursor: pointer;
+}
+.Contact-left button img{
+  height: 15px;
+}
+.Contact-right img{
+  width: 500px;
+}
+@media(max-width:800px){
+    .Contact-inputs{
+        width: 80vw;
+    }
+    .Contact-right{
+        display: none;
+    }
+}
+
+</style>
+</head>
+
+<!-- navbar  -->
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="Home.html"><img src="picture/Logo.jpg" width="110" height="110"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="Home.html">หน้าหลัก</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Data 14 Prov_.html">ข้อมูลท่องเที่ยวภาคใต้</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="About us.html">เกี่ยวกับเรา</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Contact.html">ติดต่อเรา</a>
+            </li>
+        </ul>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="log-in.html">
+                <img style="position: relative; top:8px;" src="picture/User.png" class="d-inline-block align-top">
+            </a>
+        </nav>
+    </div>
+</nav>
+
+<!-- Bootstrap JS -->
+<main>
+    <div class="Contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="Contact-left">
+            <div class="Contact-left-title">
+                <h2>ติดต่อเรา</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="a58dc0ae-5323-42f4-81ad-2176d377f770"> <!-- ส่งมาที่เมลเราเข้าไปเอาkeyในเว็บweb3forms.com/platforms/html-contact-form -->
+			<label for="name">ชื่อ<span class="star">*</span></label> 
+            <input type="text" name="name" placeholder="โปรดใส่ชื่อของคุณ" class="Contact-inputs" required>
+			
+			<label for="name">อีเมล<span class="star">*</span></label> 
+            <input type="email" name="email" placeholder="โปรดใส่อีเมลของคุณ" class="Contact-inputs" required>
+			
+			<label for="name">เบอร์โทร<span class="star"></span></label> 
+            <input type="text" name="text" placeholder="หมายเลขโทรศัพท์" class="Contact-inputs" required>
+			
+			<label for="name">ข้อความ<span class="star">*</span></label> 
+            <textarea name="message" placeholder="โปรดแสดงความคิดเห็น" class="Contact-inputs" required ></textarea>
+			
+			
+            <button type="submit">ส่ง <img src="picture/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="Contact-right">
+            <img src="picture/Email.png" alt="">
+        </div>
+    </div>
+</main>
+<br>
+<!-- Footer -->
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  var form = event.target;
+  if (!form.checkValidity()) {
+    event.preventDefault();
+    document.getElementById("error-msg").style.display = "block";
+  }
+});
+</script>
+</body>
+</html>

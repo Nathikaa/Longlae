@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="js/js/jquery.min.js"></script>
+<script src="js/js/popper.min.js" ></script>
+<script src="js/js/bootstrap.min.js" ></script>
+<script src="js/js/holder.min.js" ></script>	
+<title>Province_Phangnga</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+</style>
+ <style>
+ *{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+ font-family: "Prompt", sans-serif;
+ }
+		.content{
+			display: grid;
+			grid-template-columns: 1fr 1fr 400px;
+			grid-gap: 3em;
+		}
+		.content_left{
+			width: 100%;
+		}
+		.content_right{
+			width: 100%;
+			width: 100%;
+		}
+		.content_right p{
+		justify-content: center;
+		align-content: center;
+		background-color: ghostwhite;
+		}
+		.content_left p{
+		justify-content: center;
+		align-content: center;
+		background-color: ghostwhite;
+		}
+	     .content_right img{
+		 border-radius: 17px; 
+		 box-shadow: 2px 2px 8px 4px rgba(93, 188, 229, 0.62);
+	     }
+	      .content_left img{
+		border-radius: 17px; 
+		box-shadow: 2px 2px 8px 4px rgba(93, 188, 229, 0.62);
+	    }
+		.footer-clean {
+  padding:50px 0;
+  background-color:#fff;
+  color:#98E8E9;
+  text-align:center;
+		
+} 
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+  text-align:center;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+  text-align:center;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:center;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+	.site-footer{
+  background-color:#96EAE6;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small{
+  margin:20px 0
+}
+.site-footer h6{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a{
+  color:#737373;
+}
+.site-footer a:hover{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li{
+  display:block
+}
+.footer-links a{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li{
+  display:inline-block
+}
+.site-footer .social-icons{
+  text-align:right
+}
+.site-footer .social-icons a{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text{
+  margin:0
+}
+@media (max-width:991px){
+  .site-footer [class^=col-]{
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px){
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* back to top button styles */
+
+.back-to-top {
+  font-family: monospace;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #41ABE7;
+  position: fixed;
+  top: calc(100vh - 5rem);
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  border-radius: 10%;
+  border: 2px solid #507878;
+  background-color: #17252e;
+  text-align: center;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  -ms-transition: all 0.3s ease-in-out 0.3s;
+  -o-transition: all 0.3s ease-in-out 0.3s;
+  transition: transform 80ms ease-in-out;
+  &:hover {
+    color: #182630;
+    background-color: #3C2FD2;
+    border-color: #63E2EA;
+    transform: scale(1.1);
+  }
+}
+
+
+	</style>
+</head>
+	
+
+	
+<body>
+	<a href="#" class="back-to-top">↑</a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="Home.html"><img src="picture/Logo.jpg" width="110" height="110"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Home.html">หน้าหลัก</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Data 14 Prov_.html">ข้อมูลท่องเที่ยวภาคใต้</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="About us.html">เกี่ยวกับเรา</a>
+      </li>
+		<li class="nav-item active">
+        <a class="nav-link" href="Contact.html">ติดต่อเรา</a>
+      </li>
+    </ul>
+	 
+	  
+	  <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="log-in.html">
+      <img style="position: relative; top:8px;" src="picture/User.png" class="d-inline-block align-top">
+      </a>
+      </nav>
+</div>
+</nav>
+	
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="picture/แบรนพังงา.jpg" alt="First slide">
+    </div>
+	
+		
+
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> <br> 
+</div>
+
+
+	
+<section>
+	<div class="container">
+		<div class="content">
+			<div class="content_left">
+			<center><h2>หาดเขาหลัก</h2></center>
+				<p class="text-justify">ตั้งอยู่ในอุทยานแห่งชาติเขาหลัก-ลำรู่ จังหวัดพังงา  เป็นชายหาดที่มีทิวทัศน์สวยงามบรรยากาศเงียบสงบมีความเป็นส่วนตัวเหมาะแก่การพักผ่อนหย่อนใจหาดเขาหลักยังร่มรื่นด้วยทิวสนทะเลเรียงรายเป็นแนวเลียบชายหาดผืนทรายขาวละเอียดและน้ำทะเลสวยใสผสมผสานกับหาดหินก้อนเล็กใหญ่วางเรียงรายสวยงามอย่างลงตัวรวมถึงจุดชมวิวบริเวณแหลมเขาหลักซึ่งนักท่องเที่ยวจะได้รับความเพลิดเพลินใจไปกับธรรมชาติอันสวยงามได้อย่างเต็มอิ่มชายทะเลเขาหลักเดิมพื้นที่บริเวณนี้เป็นวนอุทยานชายทะเลเขาหลักมีลักษณะเป็นชายฝั่งทะเลยุบตัวและชายหาดมีทิวทัศน์ที่สวยงามและเป็นที่ตั้งของที่ทำการอุทยานแห่งชาติเขาหลัก-ลำรู่ อยู่ห่างจากอำเภอตะกั่วป่ามาทางอำเภอท้ายเหมืองตามถนนเพชรเกษม 33 กิโลเมตร แล้วแยกเข้าไปเพียง 50 เมตร ฝั่งตรงข้ามเป็นศาลเจ้าพ่อเขาหลักซึ่งเป็นที่เคารพบูชาของคนทั่วไป บริเวณนี้ประกอบด้วยแหลมหิน หาดหิน หาดทรายและปรากฏรอยเท้าที่จารึกบนแผ่นหินอยู่ใต้ต้นไทร มีจุดชมวิวในบริเวณแหลมเขาหลักมีทางเดินศึกษาธรรมชาติจากที่ทำการอุทยานแห่งชาติไปหาดเล็ก ระยะทาง 2 กิโลเมตร มีลักษณะเป็นทางเดินเรียบชายฝั่งนอกจากนี้ยังมีทางเดินป่าระยะไกลจากที่ทำการอุทยานแห่งชาติไปน้ำตกโตนช่องฟ้า ระยะทางประมาณ 9 กิโลเมตร บริเวณชายทะเลเขาหลักยังสามารถดำน้ำชมปะการังน้ำตื้นได้บ้างแต่ไม่มากนัก</p>
+				<video width="500" height="300" controls>
+					<source src="Video/KHAOLAK - เที่ยวเขาหลัก พังงา กิจกรรมแน่นนแบบไม่พักก! 😊💪🏼 _ Bivoyage (BRAND’S).mp4" type="video/mp4">
+				</video>
+				<br>
+				<img class="d-block w-100 " src="picture/หาดเขาหลัก1.jpg" alt="">
+				<br>
+				<img class="d-block w-100 " src="picture/หาดเขาหลัก.jpg" alt="">
+				<br>
+			</div>
+			
+			<div class="content_right">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63105.45369337411!2d98.19338616660532!3d8.682909889389242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3050e9f7ee1b959b%3A0x3d5fc596f87b5072!2sKhao%20Lak%20Beach!5e0!3m2!1sen!2sth!4v1709135803082!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<center><h2>ร้านอาหาร หรอยแรง แกงพริก</h2></center>
+				<p class="text-justify">หรอยแรง แกงพริก !!! ยกให้ร้านนี้เป็นที่ 1 ในใจ สำหรับเมนูแกงพริกกระดูกอ่อน+หมูสามชั้น รสชาติจัดจ้าน ร้อนหนัก น้ำตาไหล แต่หยุดกินไม่ได้ แถมสั่งเพิ่ม ร้านนี้ชื่อร้าน "ครัวป้าตา" อยู่ที่ อ.ตะกั่วป่า จ.พังงา ระหว่างเส้นทางจากตัวเมืองย่านยาวไปทางเมืองเก่าตะกั่วป่า เจอป้ายซ้ายมือ เลี้ยวเข้าซอยเล็กๆ ไม่นานก็พบร้านพื้นถิ่นปรุงโดยคุณป้า ช้าหน่อยแต่อร่อยมาก นอกจาก "แกงพริก" ที่รสชาติเข้มข้นสะใจ แนะนำ ให้สั่ง "ผักเหมียงต้มกะทิ" แก้เผ็ดด้วย ส่วนปลาทอดใดๆ คือ เค็มกำลังดี ทอดได้ที่ กินคู่สามอย่างนี้รับรองว่าฟิน นอกจากนี้ยังมีอีกหลายเมนูให้เลือก รสชาติถูกใจทุกจาน จนต้องมาซ้ำใครมาเที่ยวเขาหลัก หรือ ผ่านตะกั่วป่า ลองแวะชิมฝีมือป้าตาดูครับ อร่อยมาก</p>
+				<img class="d-block w-100 " src="picture/หรอยแรงแกงใต้.jpg" alt="">
+				<center><h2>เทศกาลงานประเพณี จังหวัดพังงา</h2></center>
+				<p class="text-justify">งานประเพณีปล่อยเต่า กำหนดวันจัดงานตรงกับเดือนมีนาคมของทุกปี มีการจัดงานเฉลิมฉลอง เป็นเวลา ๗ วัน กิจกรรมที่สำคัญของงาน คือ การปล่อยลูกเต่าลงสู่ทะเลบริเวณหาดท้ายเหมือง</p>
+				<img class="d-block w-100 " src="picture/ประเพณีปล่อยเต่า.jpg" alt="">
+			    <br>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>LONG LAE เลาะริมเล</h6>
+            <p class="text-justify">LONG LAE.COM หาที่ไปเที่ยวเตรียมตัวชิลเที่ยวทะเลกันได้เลยกับ 14 จังหวัดภาคใต้ประเทศไทย ทะเลสวย ใสราวกระจก ทะเลใต้เรียกได้ว่าไม่แพ้ที่ไหนในโลกอย่างแน่นอน แถมยังสวยอลังตั้งแต่หมู่เกาะ น้ำทะเล ชายหาด ไปจนถึงโลกใต้ท้องทะเลลึกกันเลยทีเดียว ตามเราไปเที่ยวสักครั้งในชีวิตมีที่ไหนกันบ้างจดลิสต์กันไว้ได้เลยค่า <br>เที่ยวกับเรา LONG LAE เลาะริมเล</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>ติดต่อเรา</h6>
+            <ul class="footer-links">
+              <li><a href="#">โทร: 09 6456 7890</a></li>
+              <li><a href="...">อีเมล : longlae6@gmail.com</a></li>
+              <li><a href="...">ที่ตั้ง : 39 หมู่ที่ 1 ตำบลคลองหก <br>อำเภอคลองหลวง จังหวัดปทุมธานี 12110</a></li>
+              <li><a href="...">Line ID : @longlae6</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-5 col-md-3">
+            <h6>เมนู</h6>
+            <ul class="footer-links">
+              <li><a href="Home.html">หน้าแรก</a></li>
+              <li><a href="Data 14 Prov_.html">ข้อมูลท่องเที่ยวภาคใต้</a></li>
+              <li><a href="About us.html">เกี่ยวกับเรา</a></li>
+              <li><a href="Contact.html">ติดต่อเรา</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+         <a href="#">LONG LAE เลาะริมเล</a>.
+            </p>
+          </div>
+
+          
+        </div>
+      </div>
+</footer>
+</body>
+</html>

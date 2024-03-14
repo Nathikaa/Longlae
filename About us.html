@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="js/js/jquery.min.js"></script>
+<script src="js/js/popper.min.js" ></script>
+<script src="js/js/bootstrap.min.js" ></script>
+<script src="js/js/holder.min.js" ></script>	
+<title>เกี่ยวกับเรา</title>
+	
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+</style>
+	<style>
+		*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Prompt", sans-serif;
+	}
+		.content{
+			display: grid;
+			grid-template-columns: 1fr 1fr 30px;
+			grid-gap: 3em;
+		}
+		.content_left{
+			width: 100%;
+			margin-left: 10px;
+			
+		}
+		.content_right{
+			width: 100%;
+		}
+		.content_right p{
+		justify-content: center;
+		align-content: center;
+		}
+		
+			
+		.footer-clean {
+  padding:50px 0;
+  background-color:#fff;
+  color:#98E8E9;
+  text-align:center;
+		
+} 
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+  text-align:center;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+  text-align:center;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:center;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+	.site-footer{
+  background-color:#96EAE6;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small{
+  margin:20px 0
+}
+.site-footer h6{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a{
+  color:#737373;
+}
+.site-footer a:hover{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li{
+  display:block
+}
+.footer-links a{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li{
+  display:inline-block
+}
+.site-footer .social-icons{
+  text-align:right
+}
+.site-footer .social-icons a{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text{
+  margin:0
+}
+@media (max-width:991px){
+  .site-footer [class^=col-]{
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px){
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* back to top button styles */
+
+.back-to-top {
+  font-family: monospace;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #41ABE7;
+  position: fixed;
+  top: calc(100vh - 5rem);
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  border-radius: 10%;
+  border: 2px solid #507878;
+  background-color: #17252e;
+  text-align: center;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  -ms-transition: all 0.3s ease-in-out 0.3s;
+  -o-transition: all 0.3s ease-in-out 0.3s;
+  transition: transform 80ms ease-in-out;
+  &:hover {
+    color: #182630;
+    background-color: #3C2FD2;
+    border-color: #63E2EA;
+    transform: scale(1.1);
+  }
+}
+		
+	</style>
+</head>
+
+<body>
+	<a href="#" class="back-to-top">↑</a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="Home.html"><img src="picture/Logo.jpg" width="110" height="110"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="Home.html">หน้าหลัก</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Data 14 Prov_.html">ข้อมูลท่องเที่ยวภาคใต้</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="About us.html">เกี่ยวกับเรา</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Contact.html">ติดต่อเรา</a>
+            </li>
+        </ul>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="log-in.html">
+                <img style="position: relative; top:8px;" src="picture/User.png" class="d-inline-block align-top">
+            </a>
+        </nav>
+    </div>
+</nav>
+	
+	<img src="picture/แบรนเนอร์เกี่ยวกับเรา.jpg" alt="" style="display: block; margin: 0 auto; max-width: 100%; width: auto;">
+	
+	<br>
+	<br>
+	<br>
+	<br>
+<section>
+	<div class="container">
+		<div class="content">
+			<div class="content_left">
+			<center><h2></h2></center>
+				<p class="text-justify">
+					<img class="d-block w-100" src="picture/เกี่ยวกับ_ล่องเล.jpg" alt="">
+					<br>
+				    <img class="d-block w-100" src="picture/Logo.jpg"   alt=""></p>
+		</div>
+	
+		<div class="content_right">
+		<center><h2></h2></center>
+			<br>
+			<p class="text-justify">Long Lae (ล่อง เล) เป็นเว็บไซต์ที่รวบรวมสถานที่ท่องเที่ยวใน 14 จังหวัดของภาคใต้ ใช้สำหรับศึกษาหาข้อมูลเพื่อประกอบการตัดสินใจและค้นคว้าในการเลือกสถานที่ท่องเที่ยว ยังได้รับความรู้และความเป็นมาของแต่ละจังหวัดอีกด้วย<br><br>พวกเรา Long Lae (ล่อง เล) สร้างเว็บไซต์นี้ขึ้นมาเพื่อเชิญชวนและแนะนำให้ทุกๆท่านได้สัมผัสกับท้องทะเลสีฟ้าคราม ศิลปะ อาหาร วัฒนธรรมที่มีเอกลักษณ์โดดเด่น มีความน่าสนใจ และสถานที่ท่องเที่ยวอื่น ๆ ที่เกี่ยวข้อง สิ่งเหล่านี้ที่กล่าวทั้งหมดล้วนอยู่ในภาคใต้ของประเทศไทยเราจึงอยากเป็นส่วนหนึ่งที่ส่งเสริมให้ความสวยงามเหล่านี้คงอยู่และส่งต่อให้ทุกท่านได้รู้จักกันมากขึ้น</p>
+		<br>
+		<center><h3>ความเป็นมาของชื่อเว็บไซต์</h3></center>
+		<p class="text-justify">Long Lae (ล่อง เล)<br>  "ภาคใต้" แค่ได้ยินคีย์เวิร์ดนี้ ทุกคนต่างนึกถึงภาพท้องทะเลอันกว้างใหญ่มีสีน้ำทะเลฟ้าครามที่เต็มไปด้วยความสวยงาม อาหาร ภาษา วัฒนธรรม และการท่องเที่ยว สิ่งเหล่านี้ตั้งอยู่ส่วนล่างของประเทศไทยเรา เมื่อพูดถึงภาคใต้เราก็จะนึกถึงการ<br> "การล่องเรือ" ออกหาปลาซึ่งเป็นทั้งธุรกิจและรายได้หลักอันดับต้น ๆ ของภาคใต้<br>  "ทะเล"เปรียบเป็นวัตถุดิบจากธรรมชาติที่อุดมไปด้วยเรื่องราวและวัฒนธรรมเมื่อนำสองคีย์เวิร์ดนี้มารวมกันเราก็จะได้ความหมาย<br>  "ล่องเล" การท่องเที่ยวที่ประสมประสานวัฒนธรรมและความเป็นอยู่</p>
+		<center><h3>ที่มาของโลโก้เว็บไซต์</h3></center>
+		<p class="text-justify">ตอนเมื่อผมยังเด็กผมเคยได้ไปนั่งเล่นเรือเล่นกับคุณแม่ไปเที่ยวทะเลที่จังหวัดหนึ่งในภาคใต้ ระหว่างทางผมมองเห็นแค่ท้องทะเลที่มีสีฟ้าครามและเส้นขอบฟ้า ไม่มีสิ่งใดที่สามารถที่ทำให้ผมละสายไปจากมันได้จนกระทั่งน้ำทะเลเปลี่ยนสีจากสีฟ้ากลายเป็นสีเขียวมรกตผมเอ่ยปากถามคนพื้นที่พวกเขาตอบผมกลับมาว่าสั้น ๆ ว่า สาเหตุที่น้ำเปลี่ยนเพราะขี้วาฬ<br> "วาฬ" หรือที่นิยมเรียกกันติดปากว่าปลาวาฬ เป็นสัตว์เลี้ยงลูกด้วยนมที่มีขนาดใหญ่อาศัยอยู่แต่เฉพาะในทะเลหรือมหาสมุทร<br> "เรือหางยาว" สัญลักษณ์ที่สื่อถึงภาคใต้ แหล่งรวบรวมภูมปัญญาพื้นบ้านวัฒนธรรมและความเป็นอยู่</p>
+			</div>
+	
+		</div>
+	</div>
+</section>    
+	
+	
+	<!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>LONG LAE เลาะริมเล</h6>
+            <p class="text-justify">LONG LAE.COM หาที่ไปเที่ยวเตรียมตัวชิลเที่ยวทะเลกันได้เลยกับ 14 จังหวัดภาคใต้ประเทศไทย ทะเลสวย ใสราวกระจก ทะเลใต้เรียกได้ว่าไม่แพ้ที่ไหนในโลกอย่างแน่นอน แถมยังสวยอลังตั้งแต่หมู่เกาะ น้ำทะเล ชายหาด ไปจนถึงโลกใต้ท้องทะเลลึกกันเลยทีเดียว ตามเราไปเที่ยวสักครั้งในชีวิตมีที่ไหนกันบ้างจดลิสต์กันไว้ได้เลยค่า <br>เที่ยวกับเรา LONG LAE เลาะริมเล</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>ติดต่อเรา</h6>
+            <ul class="footer-links">
+              <li><a href="#">โทร: 09 6456 7890</a></li>
+              <li><a href="...">อีเมล : longlae6@gmail.com</a></li>
+              <li><a href="...">ที่ตั้ง : 39 หมู่ที่ 1 ตำบลคลองหก <br>อำเภอคลองหลวง จังหวัดปทุมธานี 12110</a></li>
+              <li><a href="...">Line ID : @longlae6</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-5 col-md-3">
+            <h6>เมนู</h6>
+            <ul class="footer-links">
+              <li><a href="Home.html">หน้าแรก</a></li>
+              <li><a href="Data 14 Prov_.html">ข้อมูลท่องเที่ยวภาคใต้</a></li>
+              <li><a href="About us.html">เกี่ยวกับเรา</a></li>
+              <li><a href="Contact.html">ติดต่อเรา</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+         <a href="#">LONG LAE เลาะริมเล</a>.
+            </p>
+          </div>
+
+         
+        </div>
+      </div>
+</footer>
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
